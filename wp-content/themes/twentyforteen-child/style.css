@@ -1,0 +1,54 @@
+/*
+ Theme Name:   Twenty Fourteen Child
+ Theme URI:    http://rancor.azurewebsites.net/twenty-fourteen-child/
+ Description:  Twenty Fourteen Child Theme
+ Author:       Nick Rubey
+ Author URI:   http://rancor.azurewebsites.net
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfourteen-child
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+.body {
+	position: relative;
+}
+
+.site, .site-header {
+	max-width: none;
+}
+
+@media screen and (min-width: 1008px) {
+#site-header {
+	margin-left:222px;
+	margin-right:25%;
+}
+
+.right-header {
+	position:fixed;
+	
+	z-index: 10;
+	height: 100%;
+	right:0;
+	width:20%;
+	top: 80px;
+ }
+  
+ .site-main {
+	margin-right:25%;
+ }
+ 
+ #secondary {
+	z-index:10;
+	top:-220px;
+ }
+ }
+ 
+ .content-area {
+	padding-top: 25px;
+ }
+ 
+ 
