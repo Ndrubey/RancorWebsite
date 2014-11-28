@@ -23,6 +23,14 @@
  * @return mixed Value set for the option.
  */
 function get_option( $option, $default = false ) {
+	//Logic to redirect to local host for dev purposes
+	if ($option == "siteurl" || $option == "home") {
+		if(strcasecmp($_SERVER['REQUEST_URI'], '/rancor')) {
+			return "http://localhost/Rancor";
+		}
+	}
+
+
 	global $wpdb;
 
 	$option = trim( $option );
