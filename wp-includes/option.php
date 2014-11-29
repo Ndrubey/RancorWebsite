@@ -25,7 +25,7 @@
 function get_option( $option, $default = false ) {
 	//Logic to redirect to local host for dev purposes
 	if ($option == "siteurl" || $option == "home") {
-		if(strcasecmp($_SERVER['REQUEST_URI'], '/rancor')) {
+		if(strcasecmp($_SERVER['REQUEST_URI'], '/rancor/') == 0) {
 			return "http://localhost/Rancor";
 		}
 	}
