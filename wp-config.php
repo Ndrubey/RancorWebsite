@@ -17,6 +17,8 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'RancorAMx0HM8GA9');
+define('WP_HOME', 'http://rancor.azurewebsites.net');
+define('WP_SITEURL', 'http://rancor.azurewebsites.net');
 
 /** MySQL database username */
 define('DB_USER', 'b30aa285752c9b');
@@ -73,8 +75,8 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
+if ( !defined('ABSPATH') ) 
 	define('ABSPATH', dirname(__FILE__) . '/');
-
+	
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

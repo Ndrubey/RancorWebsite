@@ -1,5 +1,5 @@
 <?php
-$sideImgIndex = 5;
+$sideImgIndex = 6;
 /**
  * The Header for our theme
  *
@@ -27,7 +27,7 @@ $sideImgIndex = 5;
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
@@ -59,13 +59,15 @@ $sideImgIndex = 5;
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-header">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+		<!-- width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"  -->
+			<img src="<?php echo get_stylesheet_directory_uri() . "/images/LightsaberHeader.jpg"; ?>" alt="" />
 		</a>
 	</div>
 	<?php endif; ?>
 	
 	<div class="right-header">
-		<img src='<?php echo get_stylesheet_directory_uri() . "/images/right-side-image" . rand(0, $sideImgIndex) . ".jpg"; ?>' />
+		<img src='<?php echo get_stylesheet_directory_uri() . "/images/right-side-image" . rand(0, $sideImgIndex) . ".jpg"; ?>' height="100%" width="100%" alt="" />
+		<!-- <img src='<?php echo get_stylesheet_directory_uri() . "/images/right-side-image" . $sideImgIndex . ".jpg"; ?>' height="100%" width="100%" /> -->
 	</div>
 
 	<div id="main" class="site-main">

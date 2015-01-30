@@ -13,6 +13,10 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+/* body {
+	overflow-x:hidden;
+} */
+
 .body {
 	position: relative;
 }
@@ -27,14 +31,14 @@
 	margin-right:20%;
 }
 
+/*381px x 938px for the current right side image on a full sized screen*/
 .right-header {
-	position:fixed;
-	
-	z-index: 10;
+	position:fixed;	
+	z-index: 3;
 	height: 100%;
 	right:0;
 	width:20%;
-	top: 80px;
+	top: 48px;
  }
   
  .site-main {
@@ -42,8 +46,8 @@
  }
  
  #secondary {
-	z-index:10;
-	top:-220px;
+	z-index:2;
+	top:-385px;
  }
  }
  
